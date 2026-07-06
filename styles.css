@@ -4,11 +4,25 @@ body {
     margin: 20px auto; 
     padding: 20px; 
 }
-h1 {
-    text-align: center;
-    color: #333;
+
+/* Header with logo */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     margin-bottom: 10px;
 }
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+h1 {
+    color: #333;
+    margin: 0;
+}
+
 .drop-zone {
     border: 2px dashed #ccc;
     padding: 40px;
@@ -254,6 +268,10 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
     .comparison-slider {
         height: 300px;
     }
